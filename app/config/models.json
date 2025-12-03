@@ -1,0 +1,10 @@
+{
+  "llm_models": {
+    "llama3": "llama3.2:3b",
+    "mistral7b": "mistral-7b-Q4.gguf"
+  },
+  "embedding_models": {
+    "bge": "BAAI/bge-small-en",
+    "nomic": "nomic-embed-text"
+  }
+}
