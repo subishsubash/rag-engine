@@ -23,23 +23,3 @@ Open Swagger UI at http://127.0.0.1:8000/docs
 ```
 
 ---
-
-## What I did NOT include
-- Binary Llama models (you must provide these in `models/`)
-- Confluence authentication flow (basic URL fetching only)
-- Production-grade error handling, logging, retries
-
----
-
-## Next steps I can do for you
-- Create a downloadable ZIP of this project
-- Add CI / Dockerfile to containerize the app
-- Add authentication for Confluence and file sources
-- Add a web UI (Streamlit or React) + file uploader
-
----
-
-Project generated. Open the canvas file to review and copy files into your local workspace. If you want, I can now:
-- produce a ZIP file for download, or
-- add Dockerfile + docker-compose, or
-- add Streamlit UI.
