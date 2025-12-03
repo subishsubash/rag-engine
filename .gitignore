@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+app/config/app.env
+app/config/api_keys.json
+models/
+faiss_index/
+tmp_uploads/
