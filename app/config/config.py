@@ -20,6 +20,7 @@ class Settings:
     
     #Get other properties from app.env file
     HF_API_KEY = os.getenv('HF_API_KEY', '')
+    LLM_MODEL_ID = os.getenv('LLM_MODEL_ID','OLLAMA')
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY', '')
     FAISS_PATH = os.getenv('FAISS_PATH', 'faiss_index')
     META_PATH = os.getenv('META_PATH', 'faiss_meta.pkl')
