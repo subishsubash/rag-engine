@@ -1,4 +1,4 @@
-```markdown
+
 # RAG API with Ollama, BAAI Embeddings, FAISS & FastAPI
 
 This project is a **Retrieval-Augmented Generation (RAG)** backend built using **FastAPI**, **FAISS**, **BAAI (HuggingFace) embeddings**, and **Ollama** for local LLM inference.  
@@ -8,7 +8,6 @@ It allows you to **train a vector database from documents or URLs** and **ask gr
 
 ## Architecture Overview
 
-```
 ````
 Client
 │
@@ -32,8 +31,6 @@ Ollama (LLM)
 ↓
 Answer
 ````
-
-```
 
 ---
 
@@ -68,7 +65,6 @@ Answer
 
 ## Project Structure
 
-```
 ````
 app/
 ├── config/
@@ -157,9 +153,8 @@ pip install -r requirements.txt
 ## Running the Application
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn app.main:app --reloa
 ```
-
 Server will be available at:
 
 ```
