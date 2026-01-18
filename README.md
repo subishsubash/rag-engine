@@ -21,15 +21,15 @@ Client
 │        ↓
 │   FAISS Vector Store (persisted)
 │
-└── /ask
-|      ↓
-|    FAISS Similarity Search
-|      ↓
-|    Context Construction
-|      ↓
-|    Ollama (LLM)
-|       ↓
-|    Answer
+├── /ask
+│      ↓
+│   FAISS Similarity Search
+│      ↓
+│   Context Construction
+│      ↓
+│   Ollama (LLM)
+│      ↓
+│   Answer
 
 ````
 
