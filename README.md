@@ -145,7 +145,7 @@ cd <repo>
 python -m venv venv
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 venv\Scripts\activate 
-pip install fastapi uvicorn[standard] python-multipart pydantic langchain sentence-transformers faiss-cpu PyPDF2 python-docx beautifulsoup4 requests tqdm python-dotenv transformers ollama langchain-huggingface langchain langchain-community
+pip install fastapi uvicorn[standard] python-multipart pydantic langchain sentence-transformers faiss-cpu PyPDF2 python-docx beautifulsoup4 requests tqdm python-dotenv transformers ollama langchain-huggingface langchain openpyxl pandas langchain-community
 ```
 
 ---
@@ -153,7 +153,7 @@ pip install fastapi uvicorn[standard] python-multipart pydantic langchain senten
 ## Running the Application
 
 ```bash
-uvicorn app.main:app --reload
+uvicorn app.main:app --reload --log-level info
 ```
 Server will be available at:
 
