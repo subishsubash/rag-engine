@@ -22,14 +22,15 @@ Client
 │   FAISS Vector Store (persisted)
 │
 └── /ask
-↓
-FAISS Similarity Search
-↓
-Context Construction
-↓
-Ollama (LLM)
-↓
-Answer
+|      ↓
+|    FAISS Similarity Search
+|      ↓
+|    Context Construction
+|      ↓
+|    Ollama (LLM)
+|       ↓
+|    Answer
+
 ````
 
 ---
@@ -142,10 +143,9 @@ git clone <repo-url>
 cd <repo>
 
 python -m venv venv
-source venv/bin/activate   # Linux / Mac
-venv\Scripts\activate      # Windows
-
-pip install -r requirements.txt
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+venv\Scripts\activate 
+pip install fastapi uvicorn[standard] python-multipart pydantic langchain sentence-transformers faiss-cpu PyPDF2 python-docx beautifulsoup4 requests tqdm python-dotenv transformers ollama langchain-huggingface langchain langchain-community
 ```
 
 ---
@@ -153,12 +153,13 @@ pip install -r requirements.txt
 ## Running the Application
 
 ```bash
-uvicorn app.main:app --reloa
+uvicorn app.main:app --reload
 ```
 Server will be available at:
 
 ```
 http://localhost:8000
+http://localhost:8000/docs
 ```
 
 ---

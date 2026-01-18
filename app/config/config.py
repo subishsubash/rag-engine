@@ -20,12 +20,12 @@ class Settings:
     
     #Get other properties from app.env file
     HF_API_KEY = os.getenv('HF_API_KEY', '')
-    LLM_MODEL_ID = os.getenv('LLM_MODEL_ID','OLLAMA')
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY', '')
     FAISS_PATH = os.getenv('FAISS_PATH', 'faiss_index')
     META_PATH = os.getenv('META_PATH', 'faiss_meta.pkl')
     MAX_CHUNK_SIZE = int(os.getenv('MAX_CHUNK_SIZE', 500))
     CHUNK_OVERLAP = int(os.getenv('CHUNK_OVERLAP', 100))
     TEMPERATURE = float(os.getenv('TEMPERATURE', 0.2))
+    LLM_MODEL_ID = os.getenv('LLM_MODEL_ID', 'OLLAMA')
 
 settings = Settings()
